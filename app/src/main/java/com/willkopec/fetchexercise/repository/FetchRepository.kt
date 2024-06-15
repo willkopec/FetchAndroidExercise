@@ -11,7 +11,7 @@ class FetchRepository @Inject constructor(){
         val response = try {
             RetrofitInstance.api.getProductData()
         } catch (e: Exception){
-            return Resource.Error("An unknown error occured!")
+            return Resource.Error("An error occured : ${e.message}")
         }
         return Resource.Success(response)
     }

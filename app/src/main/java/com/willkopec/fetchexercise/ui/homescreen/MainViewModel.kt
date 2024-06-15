@@ -62,7 +62,7 @@ constructor(
 
                 }
                 is Resource.Error -> {
-                    _loadError.value = "Failed to get data from Fetch API"
+                    _loadError.value = "Failed to get data from Fetch API or no internet connection"
                 }
 
                 else -> {}

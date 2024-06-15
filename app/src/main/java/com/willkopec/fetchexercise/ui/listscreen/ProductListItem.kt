@@ -39,13 +39,13 @@ fun ProductListItem(
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween, // Adjusted horizontal arrangement
-            verticalAlignment = Alignment.CenterVertically // Center items vertically
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Column(
                 modifier = Modifier
                     .weight(1f)
-                    .padding(horizontal = 16.dp) // Add horizontal padding
+                    .padding(horizontal = 16.dp)
             ) {
                 Text(
                     text = currentProductInfo.listId.toString(),
@@ -56,7 +56,7 @@ fun ProductListItem(
             Column(
                 modifier = Modifier
                     .weight(1f)
-                    .padding(horizontal = 16.dp) // Add horizontal padding
+                    .padding(horizontal = 16.dp)
             ) {
                 currentProductInfo.name?.let {
                     Text(
@@ -69,7 +69,7 @@ fun ProductListItem(
             Column(
                 modifier = Modifier
                     .weight(1f)
-                    .padding(horizontal = 16.dp) // Add horizontal padding
+                    .padding(horizontal = 16.dp)
             ) {
                 Text(
                     text = currentProductInfo.id.toString(),
